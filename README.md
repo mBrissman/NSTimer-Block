@@ -2,8 +2,6 @@ NSTimer+Block
 =============
 Use blocks with NSTimer.
 
-<br />
-
 ### Creating a timer
 
 ```
