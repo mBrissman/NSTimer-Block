@@ -19,8 +19,8 @@ Initializes a new NSTimer object using the specified block.
 
 --
 ```
-+ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats 
-                                      block:(void (^)(void))block;
++ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)seconds 
+                repeats:(BOOL)repeats block:(void (^)(void))block;
 ```
 Creates and returns a new NSTimer object and schedules it on the current run loop in the default mode.
  
