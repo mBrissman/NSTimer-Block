@@ -1,6 +1,6 @@
 NSTimer+Block
 =============
-Use blocks with NSTimer.
+Use blocks with [NSTimer](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSTimer_Class "NSTimer Class Reference").
 
 ### Example
 
