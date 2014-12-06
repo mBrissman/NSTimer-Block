@@ -2,6 +2,15 @@ NSTimer+Block
 =============
 Use blocks with NSTimer.
 
+### Example
+
+```
+[NSTimer scheduledTimerWithTimeInterval:0.5 repeats:YES block:^{
+     // Code
+}];
+```
+
+
 ### Creating a timer
 
 ```
