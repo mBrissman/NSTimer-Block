@@ -17,7 +17,7 @@
  @param block The block to be executed when the timer fire. The block should take no parameters and have no return value.
  @return The receiver, initialized such that, when added to a run loop, it will fire at date and then, if repeats is YES, every seconds after that.
  */
-- (instancetype)initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
+- (instancetype)initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(NSTimer*))block;
 
 /**
  Creates and returns a new NSTimer object and schedules it on the current run loop in the default mode.
@@ -26,7 +26,7 @@
  @param block The block to be executed when the timer fire. The block should take no parameters and have no return value.
  @return A new NSTimer object, configured according to the specified parameters.
  */
-+ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
++ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(NSTimer*))block;
 
 /**
  Creates and returns a new NSTimer object initialized with the specified block.
@@ -34,6 +34,6 @@
  @param repeats If YES, the timer will repeatedly reschedule itself until invalidated. If NO, the timer will be invalidated after it fires.
  @param block The block to be executed when the timer fire. The block should take no parameters and have no return value.
  */
-+ (NSTimer *)timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
++ (NSTimer *)timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(NSTimer*))block;
 
 @end
